@@ -1,0 +1,82 @@
+.customer-management {
+  max-width: 900px;
+
+  margin: auto;
+  background: #fffefe;
+  color: rgb(243, 241, 241);
+  padding: 13px;
+  border-radius: 18px;
+  // height: 100vh;
+  background-color: black;
+  h1 {
+    text-align: center;
+    color: #4ab9c7;
+
+    font-size: 50px;
+  }
+
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #f9e8e8;
+
+    input,
+    select {
+      padding: 8px;
+      font-size: 16px;
+      color: #f9e8e8;
+      font-weight: 550;
+      border-radius: 15px;
+      background-color: black;
+      border: none;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #794e4e;
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #444;
+    }
+
+    th {
+      background: #444;
+    }
+
+    td {
+      background: #555;
+    }
+
+    .active {
+      color: #00ff00;
+    }
+
+    .locked {
+      color: #ff0000;
+    }
+
+    button {
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 5px;
+
+      &.active {
+        background: red;
+        color: white;
+      }
+
+      &.locked {
+        background: green;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.customerHistoryContainer {
+  height: 85vh;
+  .customer-details {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    // background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    // height: 40vh;
+    li {
+      margin-bottom: 10px;
+      font-size: 18px;
+
+      strong {
+        margin-right: 8px;
+        color: white;
+      }
+    }
+
+    .status-active {
+      color: green;
+      font-weight: bold;
+    }
+
+    .status-blocked {
+      color: red;
+      font-weight: bold;
+    }
+  }
+
+  .order-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: 39px;
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 17px;
+      text-align: center;
+    }
+
+    th {
+      // background-color: #f0f0f0;
+      font-weight: bold;
+    }
+  }
+
+  .back-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}

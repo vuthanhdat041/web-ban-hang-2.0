@@ -1,0 +1,199 @@
+.quick-add-overlayyy {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); // phần còn lại bị mờ
+  z-index: 9999;
+}
+
+.popUpCartContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 600px;
+  height: 100vh;
+  // background: white;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+
+  &.open {
+    transform: translateX(0);
+  }
+  .quick-add-modal {
+    background: #111;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #3d3d3d;
+    color: white;
+
+    .close-btn {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: wheat;
+      cursor: pointer;
+    }
+
+    .modal-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      flex: 1;
+      position: relative;
+      height: 100%;
+      // overflow-y: auto;
+      .cart-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.5rem;
+        .left {
+          font-weight: bold;
+        }
+
+        .right {
+          color: #888; // hoặc tuỳ chỉnh màu nhẹ cho số lượng
+          font-size: 1rem;
+        }
+      }
+      .cart-items {
+        max-height: 300px; /* Giới hạn chiều cao của container */
+        overflow-y: auto;
+
+        .cart-item {
+          // height: 400px;
+          display: flex;
+          align-items: center;
+          color: white;
+          padding: 1rem;
+          border-bottom: 1px solid #333;
+          position: relative;
+
+          &__image {
+            width: 100px;
+            height: 100px;
+            // width: 100%;
+            // height: 100%;
+            // height: auto;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            // border: 1px solid white;
+            display: block;
+          }
+
+          &__details {
+            flex: 1;
+            margin-left: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+
+            & > div {
+              font-size: 0.95rem;
+            }
+          }
+
+          &__title {
+            font-weight: bold;
+            font-size: 1.1rem;
+          }
+          &__size {
+            font-weight: 500;
+            color: #bbb;
+          }
+          &__price {
+            font-weight: 500;
+            color: #bbb;
+          }
+
+          &__quantity {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            button {
+              background-color: transparent;
+              color: white;
+              border: 1px solid #555;
+              padding: 0.25rem 0.5rem;
+              cursor: pointer;
+              border-radius: 4px;
+            }
+          }
+
+          &__delete {
+            background: transparent;
+            border: none;
+            color: #888;
+            cursor: pointer;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+
+            &:hover {
+              color: red;
+            }
+          }
+        }
+      }
+
+      .summary {
+        // position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-top: 15px;
+        margin-top: 15px;
+        .row {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 10px;
+
+          &.total {
+            font-weight: bold;
+            margin-bottom: 20px;
+          }
+
+          &.discount {
+            color: #ccc;
+          }
+        }
+        .checkout-btn {
+          width: 100%;
+          background: #ffc107;
+
+          color: #000;
+          padding: 12px;
+          font-weight: bold;
+          border: none;
+          margin-top: 10px;
+          cursor: pointer;
+          // background-color: #fab320;
+          // border: none;
+          // color: #fff;
+          // padding: 10px 20px;
+          border-radius: 5px;
+          // cursor: pointer;
+          // transition: background-color 0.3s;
+          // width: 100%;
+          // color: black;
+
+          &:hover {
+            background-color: black;
+            border: 1px solid #fab320;
+            color: #fab320;
+          }
+        }
+      }
+    }
+  }
+}

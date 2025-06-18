@@ -1,0 +1,105 @@
+.abc {
+    color: #ffffff;
+    background: #000000;
+    padding: 20px;
+    text-align: center;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      margin-bottom:40px;
+      /* ...các thuộc tính khác bạn muốn... */
+    }
+  
+    .photo1{
+        border: 1px solid #f4ebeb;
+        width: 600px;
+        height: 200px;
+        margin: 10px auto;      /* căn giữa phần tử theo chiều ngang */
+        
+        /* Sử dụng Flexbox để canh giữa theo chiều dọc và ngang */
+        display: flex;
+        justify-content: center; /* canh giữa theo trục ngang */
+        align-items: center;     /* canh giữa theo trục dọc */
+    
+        font-size: 23px;
+        color: #f4ebeb;
+    }
+
+    .photo2{
+        border: 1px solid #f4ebeb;
+        width: 600px;
+        height: 200px;
+        margin: 10px auto;      /* căn giữa phần tử theo chiều ngang */
+        
+        /* Sử dụng Flexbox để canh giữa theo chiều dọc và ngang */
+        display: flex;
+        justify-content: center; /* canh giữa theo trục ngang */
+        align-items: center;     /* canh giữa theo trục dọc */
+    
+        font-size: 23px;
+        color: #f4ebeb;
+    }
+
+    .photo3{
+        border: 1px solid #f4ebeb;
+        width: 600px;
+        height: 200px;
+        margin: 10px auto;      /* căn giữa phần tử theo chiều ngang */
+        
+        /* Sử dụng Flexbox để canh giữa theo chiều dọc và ngang */
+        display: flex;
+        justify-content: center; /* canh giữa theo trục ngang */
+        align-items: center;     /* canh giữa theo trục dọc */
+    
+        font-size: 23px;
+        color: #f4ebeb;
+    }
+
+    .photo4{
+        border: 1px solid #f4ebeb;
+        width: 600px;
+        height: 200px;
+        margin: 10px auto;      /* căn giữa phần tử theo chiều ngang */
+        
+        /* Sử dụng Flexbox để canh giữa theo chiều dọc và ngang */
+        display: flex;
+        justify-content: center; /* canh giữa theo trục ngang */
+        align-items: center;     /* canh giữa theo trục dọc */
+    
+        font-size: 23px;
+        color: #f4ebeb;
+    }
+
+    .photo5{
+        border: 1px solid #f4ebeb;
+        width: 600px;
+        height: 200px;
+        margin: 10px auto;      /* căn giữa phần tử theo chiều ngang */
+        
+        /* Sử dụng Flexbox để canh giữa theo chiều dọc và ngang */
+        display: flex;
+        justify-content: center; /* canh giữa theo trục ngang */
+        align-items: center;     /* canh giữa theo trục dọc */
+    
+        font-size: 23px;
+        color: #f4ebeb;
+    }
+
+    .photo6{
+        border: 1px solid #f4ebeb;
+        width: 600px;
+        height: 200px;
+        margin: 10px auto;      /* căn giữa phần tử theo chiều ngang */
+        
+        /* Sử dụng Flexbox để canh giữa theo chiều dọc và ngang */
+        display: flex;
+        justify-content: center; /* canh giữa theo trục ngang */
+        align-items: center;     /* canh giữa theo trục dọc */
+    
+        font-size: 23px;
+        color: #f4ebeb;
+    }
+  }
+  

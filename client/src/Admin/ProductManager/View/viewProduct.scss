@@ -1,0 +1,68 @@
+.product-detail-container {
+  max-width: 600px;
+  // height: 70vh;
+  height: 100vh;
+
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #222; // Nền tối
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  text-align: center;
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white; // Chữ trắng
+  }
+
+  .product-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #ccc; // Chữ xám sáng để dễ đọc hơn trên nền đen
+
+    strong {
+      color: white; // Chữ trắng để nổi bật
+    }
+  }
+
+  .status-active {
+    color: #28a745;
+    font-weight: bold;
+  }
+
+  .status-inactive {
+    color: #dc3545;
+    font-weight: bold;
+  }
+  .btn-back {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+
+    &:hover {
+      background-color: #1e7e34; // Màu tối hơn khi hover
+      transform: translateY(-2px); // Nhẹ nhàng nhấc nút lên
+    }
+
+    &:active {
+      transform: translateY(0); // Nhấn xuống trở lại vị trí ban đầu
+    }
+  }
+}

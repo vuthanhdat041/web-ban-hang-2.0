@@ -1,0 +1,87 @@
+.order-summary {
+  font-family: Arial, sans-serif;
+  //   background: #fff;
+  padding: 10px 20px;
+  //   border: 1px solid #ddd;
+  border-radius: 8px;
+  //   max-width: 700px;
+  margin: 20px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #222222;
+  .product {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+
+    .product-img {
+      width: 40px;
+      object-fit: cover;
+      display: block;
+      height: 40px;
+      margin-right: 20px;
+      // border: 1px solid blue;
+    }
+
+    .product-info {
+      flex: 1;
+      color: #fff;
+      .product-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .product-option,
+      .product-qty {
+        display: block;
+        font-size: 12px;
+        color: #767373;
+      }
+    }
+
+    .product-price {
+      text-align: right;
+      color: #fff;
+      //   .original-price {
+      //     text-decoration: line-through;
+      //     color: #999;
+      //     margin-right: 5px;
+      //   }
+
+      //   .discounted-price {
+      //     color: red;
+      //     font-weight: bold;
+      //   }
+    }
+  }
+
+  .total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #fff;
+  }
+
+  .actions {
+    margin-top: 10px;
+    display: flex;
+    // gap: 10px;
+    // justify-content: flex-end;
+    // display: flex;
+    justify-content: space-between;
+    .btn {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .buy-again {
+      background-color: #facc15;
+      color: black;
+    }
+  }
+}

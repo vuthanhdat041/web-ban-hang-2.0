@@ -1,0 +1,11 @@
+.notFoundContainer {
+  height: 90vh;
+  display: flex;
+  justify-content: center; // căn giữa ngang
+  align-items: center; // căn giữa dọc
+  flex-direction: column;
+  color: red;
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+}

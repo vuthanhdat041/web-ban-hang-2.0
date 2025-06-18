@@ -1,0 +1,115 @@
+.OrderListDiv {
+  margin-top: 50px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .SearchDiv {
+    width: 55%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .SearchInput {
+    width: 70%;
+    height: 3vh;
+    padding-left: 20px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .SearchButton {
+    height: 3.5vh;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 80%;
+
+    thead {
+      tr {
+        th {
+          padding: 10px;
+          border: 1px solid white;
+          text-align: center;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          padding: 8px;
+          border: 1px solid white;
+          text-align: center;
+          button {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            background-color: black;
+            cursor: pointer;
+            color: white;
+          }
+        }
+
+        &:nth-child(even) {
+          background-color: #443f3f;
+        }
+
+        &:hover {
+          background-color: #ddd;
+        }
+      }
+    }
+  }
+
+  .pagination {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    button {
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      background-color: black;
+      cursor: pointer;
+      color: white;
+
+      &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+      }
+    }
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+select {
+  background-color: #fab31f !important;
+  color: black !important;
+  border: none;
+  padding: 5px;
+  font-size: 14px;
+
+  option {
+    background-color: #fab31f !important;
+    color: black !important;
+
+    &:hover {
+      background-color: lightgray !important;
+      color: black !important;
+    }
+  }
+}

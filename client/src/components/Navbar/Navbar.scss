@@ -1,0 +1,87 @@
+.navbarContainer {
+  height: 100px;
+  width: 100%;
+  // position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // overflow: hidden;
+  // z-index: 10;
+  background-color: black;
+  color: white;
+  .topNav {
+    border-bottom: 1px solid #333;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    box-sizing: border-box;
+    align-items: center;
+    .left {
+      display: flex;
+      flex: 1;
+      gap: 20px;
+    }
+    .middle {
+      flex: 1;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 700;
+    }
+    .right {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      gap: 15px;
+    }
+  }
+  .bottomNav {
+    height: 40px;
+    border-bottom: 1px solid #333;
+    background-color: black;
+    display: flex;
+    justify-content: center; /* Căn giữa các box theo chiều ngang */
+    align-items: center;
+    gap: 10px;
+    .navItem {
+      text-decoration: none;
+      cursor: pointer; // thay đổi con trỏ khi hover
+
+      &:hover {
+        text-decoration: underline; // Gạch dưới khi hover
+        text-decoration-color: #fab320;
+        text-underline-offset: 5px; // Đặt gạch dưới thấp hơn chữ (tăng giá trị để thấp hơn)
+        text-decoration-thickness: 3px;
+      }
+    }
+  }
+}
+
+.jewelry-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10px;
+
+  .jewelry-category {
+    h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+        color: #555;
+      }
+    }
+  }
+}

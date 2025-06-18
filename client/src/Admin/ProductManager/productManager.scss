@@ -1,0 +1,125 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white; // Chữ màu trắng
+  height: auto;
+  min-height: 100vh;
+  padding: 20px;
+
+  .btn-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .btn {
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn-category {
+      background-color: #6c757d;
+      color: white;
+      &:hover {
+        background-color: #545b62;
+      }
+    }
+
+    .btn-add {
+      background-color: #007bff;
+      color: white;
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+
+  .table-container {
+    width: 90%;
+    max-width: 1200px;
+    background: #222; // Đổi nền bảng sang xám đậm
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    color: white; // Đổi màu chữ trong bảng
+    margin-top: 20px;
+  }
+
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+
+    th,
+    td {
+      padding: 12px;
+      border-bottom: 1px solid #444; // Đổi viền bảng thành xám đậm
+      text-align: center;
+    }
+
+    th {
+      background-color: #fab31f;
+      color: black;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #333; // Đổi màu nền xen kẽ thành xám tối
+    }
+  }
+
+  .status-active {
+    color: #28a745;
+    font-weight: bold;
+  }
+
+  .status-inactive {
+    color: #dc3545;
+    font-weight: bold;
+  }
+
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    .btn {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.2s, opacity 0.3s;
+      text-decoration: none;
+      font-size: 14px;
+      white-space: nowrap;
+
+      &:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
+      }
+
+      &.btn-read {
+        background-color: black;
+        color: white;
+        border: solid 1px #ffc107;
+      }
+
+      &.btn-edit {
+        background-color: black;
+        color: white;
+        border: solid 1px #ffc107;
+      }
+
+      &.btn-delete {
+        background-color: black;
+        color: white;
+        border: solid 1px #ffc107;
+      }
+    }
+  }
+}

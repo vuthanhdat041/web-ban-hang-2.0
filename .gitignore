@@ -1,0 +1,40 @@
+# ===== Global Node.js ignore =====
+**/node_modules/
+**/dist/
+**/build/
+**/.env
+**/.env.* 
+**/coverage/
+**/logs/
+**/*.log
+
+# ===== Lock files =====
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ===== macOS system files =====
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+.Spotlight-V100
+.Trashes
+*.icloud
+
+# ===== Editor folders =====
+.vscode/
+*.swp
+*.tmp
+*.local
+*.lock
+
+# ===== React (client) =====
+client/.cache/
+client/.next/
+client/out/
+client/*.tsbuildinfo
+
+# ===== Optional for clean repo =====
+api/temp/
+client/temp/

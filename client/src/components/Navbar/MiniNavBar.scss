@@ -1,0 +1,61 @@
+// .jewelry-list {
+//     display: grid;
+//     gap: 10px;
+//     padding: 10px 50px;
+//     background-color: black;
+
+//     .jewelry-category {
+//       h3 {
+//         font-size: 0.9em;
+//         margin-bottom: 10px;
+//         color: white;
+//       }
+  
+//       ul {
+//         // list-style-type: none;
+//         padding: 0;
+  
+//         li {
+//           font-size: 0.9em;
+//           margin-bottom: 5px;
+//           color: white;
+//         }
+//       }
+//     }
+//   }
+
+
+.jewelry-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Chia đều cho 4 mục */
+  grid-template-rows: auto;
+  gap: 10px;
+  padding: 10px 50px;
+  background-color: black;
+  justify-items: center; /* Căn giữa các mục */
+  &.gift { // CSS cho khi có class gift 
+    grid-template-columns: repeat(4, 1fr); 
+  }
+
+  .jewelry-category {
+      h3 {
+          font-size: 0.9em;
+          margin-bottom: 10px;
+          color: white;
+      }
+
+      ul {
+          // list-style-type: none;
+          padding: 0;
+
+          li {
+              font-size: 0.9em;
+              margin-bottom: 5px;
+              color: white;
+          }
+      }
+  }
+}
+
+
+  

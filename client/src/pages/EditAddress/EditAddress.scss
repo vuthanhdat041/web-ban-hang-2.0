@@ -1,0 +1,123 @@
+.editAddressContainer{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    min-height: 80vh;
+  
+    .back-link {
+      display: block;
+      margin: 10px 0;
+      color: white;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+  
+    .address-card {
+        width: 40vh;
+      background: #222;
+      padding: 15px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 20px;
+  
+      .default {
+        font-style: italic;
+        font-weight: bold;
+      }
+  
+      .name, .country {
+        margin: 5px 0;
+      }
+  
+      .actions {
+        margin-top: 10px;
+  
+        .edit, .delete {
+          color: white;
+          text-decoration: none;
+          margin: 0 5px;
+        }
+      }
+    }
+  
+    .divider {
+      color: white;
+    }
+}
+
+
+
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+  
+    .address-form {
+
+      background: #222;
+      padding: 20px;
+      border-radius: 8px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 400px;
+      .error {
+        color: red;
+        font-size: 12px;
+        margin-top: 4px;
+      }
+      .input-group {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      label {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+  
+      input, select {
+        margin-top: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        width: 95%;
+        background: #333;
+        color: white;
+      }
+  
+      
+  
+      .submit-btn, .cancel-btn {
+        margin-top: 15px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+  
+      .submit-btn {
+        background: #f5a623;
+        color: black;
+      }
+  
+      .cancel-btn {
+        background: transparent;
+        color: white;
+        text-decoration: underline;
+      }
+    }
+  }
+  

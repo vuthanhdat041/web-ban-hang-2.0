@@ -1,0 +1,44 @@
+/* Modal.css */
+.searchModalComponent {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transition: opacity 0.3s ease;
+  }
+  .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    .search-input {
+      padding: 10px 20px;
+      font-size: 30px;
+      width: 400px;
+      border: none;
+      border-bottom: 2px solid #fff;
+      background-color: transparent;
+      color: #fff;
+      outline: none;
+
+      &::placeholder {
+        color: #fff;
+        opacity: 0.7;
+      }
+    }
+    .close {
+      padding-left: 40px;
+    }
+  }
+}

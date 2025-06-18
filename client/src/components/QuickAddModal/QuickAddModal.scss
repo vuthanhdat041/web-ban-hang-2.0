@@ -1,0 +1,95 @@
+.quick-add-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.quick-add-modal {
+  background: black;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+  border: 1px solid #3d3d3d;
+  .close-btn {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: wheat;
+    cursor: pointer;
+  }
+
+  .modal-content {
+    display: flex;
+    gap: 2rem;
+
+    img {
+      width: 200px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .info {
+      flex: 1;
+
+      .price {
+        color: #f5a623;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      .size-options {
+        margin-bottom: 1rem;
+
+        button {
+          margin-right: 0.5rem;
+          padding: 0.3rem 0.7rem;
+          border: 1px solid #ccc;
+          background: white;
+          cursor: pointer;
+          &.active {
+            background: black;
+            color: white;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .quantity {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+
+        button {
+          width: 30px;
+          height: 30px;
+        }
+
+        span {
+          min-width: 20px;
+          text-align: center;
+        }
+      }
+
+      .confirm-btn {
+        background: #f5a623;
+        padding: 0.6rem 1.2rem;
+        border: none;
+        color: black;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+    }
+  }
+}

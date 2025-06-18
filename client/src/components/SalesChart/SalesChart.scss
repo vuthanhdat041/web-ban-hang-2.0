@@ -1,0 +1,24 @@
+.chart {
+  padding: 20px;
+  height: 600px;
+  min-width: 1300px;
+  width: 100%;
+  overflow-x: auto;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  .editScroll {
+    &::-webkit-scrollbar {
+      display: none; /* Hoặc width: 0; height: 0; */
+    }
+
+    /* Ẩn thanh cuộn cho Firefox (trên Windows) */
+    scrollbar-width: none; /* "none" để ẩn */
+
+    /* Ẩn thanh cuộn cho Internet Explorer và Edge cũ (ms-overflow-style) */
+    -ms-overflow-style: none; /* "none" để ẩn */
+
+    /* Đảm bảo div này có position: relative hoặc absolute nếu bạn muốn kiểm soát overflow chính xác */
+    position: relative; // Đảm bảo div này là container cho các overflow
+  }
+}

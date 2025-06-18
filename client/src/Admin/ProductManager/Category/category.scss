@@ -1,0 +1,96 @@
+.category-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #1e1e1e; // Nền tối
+  color: #ffffff; // Chữ trắng
+  height: 85vh;
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  .add-category {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    input {
+      padding: 8px;
+      border: 1px solid #444;
+      border-radius: 5px;
+      width: 60%;
+      background-color: #333;
+      color: #ffffff;
+    }
+
+    .btn-add {
+      padding: 8px 12px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-add:hover {
+      background-color: #218838;
+    }
+  }
+
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2c2c2c; // Nền bảng tối
+
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid #444;
+      text-align: center;
+      color: #ffffff; // Chữ trắng
+    }
+
+    th {
+      background-color: #333; // Màu header tối hơn
+    }
+
+    .btn-delete {
+      padding: 6px 12px;
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-delete:hover {
+      background-color: #c82333;
+    }
+  }
+
+  .btn-back {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+
+    &:hover {
+      background-color: #1e7e34; // Màu tối hơn khi hover
+      transform: translateY(-2px); // Nhẹ nhàng nhấc nút lên
+    }
+
+    &:active {
+      transform: translateY(0); // Nhấn xuống trở lại vị trí ban đầu
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.contact-container {
+  background-color: black;
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  flex-direction: column; /* Sắp xếp theo cột */
+  color: #ffffff;
+  .header {
+    font-size: 50px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  
+}

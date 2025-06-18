@@ -1,0 +1,185 @@
+.body {
+    background-color: black;
+    color: white;
+}
+
+.homeContainer {
+    background-color: black;
+    color: white;
+
+    .homeImage {
+        align-items: center;
+        height: 700px;
+        width: 100%;
+        border: 2px solid black;
+        background-color: white;
+    }
+
+    .twoProductText {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        padding: 30px 0;
+    }
+
+    .twoProductImages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+
+        .twoProductImage {
+            display: inline-block;
+            height: 500px;
+            width: 48%;
+            border: 2px solid black;
+            margin: 0 10px;
+            background-color: white;
+        }
+    }
+
+    .homeClassifyTexts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+
+        .homeClassifyTextSignature,
+        .homeClassifyTextHorizon {
+            display: inline-block;
+            padding: 0 10px;
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+            position: relative;
+
+            &:hover {
+                text-decoration: underline;
+                transition: text-decoration 0.3s ease-in-out;
+            }
+        }
+
+        .homeClassifyTextHorizon {
+            padding-right: 37px;
+        }
+    }
+
+    .homeProductListContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        border: 2px solid black;
+        width: 100%;
+        height: 1000px;
+        margin-bottom: 30px;
+        align-items: center;
+        justify-items: center;
+
+        .ProductItem {
+            height: 100%;
+            width: 90%;
+            border: 2px solid black;
+
+            .ProductImageDiv,
+            .ProductInfoDiv {
+                width: 99%;
+                border: 2px solid black;
+                align-items: center;
+                background-color: white;
+                color: black;
+            }
+
+            .ProductImageDiv {
+                height: 65%;
+            }
+
+            .ProductInfoDiv {
+                height: 30%;
+                margin-top: 5px;
+                background-color: black;
+                color: white;
+            }
+
+            .ProductNameDiv {
+                text-transform: uppercase;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin: 7px 0;
+                font-size: 16px;
+            }
+
+            .ProductPriceDiv,
+            .ProductRatingDiv {
+                font-size: 14px;
+                margin-bottom: 7px;
+            }
+
+            .ProductBuyButton {
+                margin-top: 7px;
+                height: 45px;
+                width: 100%;
+                font-size: 11px;
+                background-color: rgb(231, 172, 52);
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: transparent;
+                    color: rgb(231, 172, 52);
+                    border: 2px solid rgb(231, 172, 52);
+                }
+            }
+        }
+    }
+
+    .SliverContainer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 520px;
+        border: 2px solid black;
+        padding: 10px 0 20px;
+
+        .SliverItem {
+            display: inline-block;
+            width: 46%;
+            height: 500px;
+            margin: 0 20px;
+            border: 2px solid black;
+            background-color: white;
+        }
+    }
+
+    .ThanksContainer {
+        height: 500px;
+        width: 100%;
+        border: 2px solid black;
+        background-color: white;
+    }
+}
+
+.ProductImage {
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+.TheSignatureImage,
+.TheHorizonImage,
+.ThanksImage {
+    width: 100%;
+    height: 100%;
+}
+
+.TheSignatureImage {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}

@@ -1,0 +1,112 @@
+.superAdminContainer {
+  height: auto;
+  padding: 20px;
+  .overview {
+    // border: 1px solid red;
+    height: 200px;
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      padding: 20px;
+      // background: #f5f6fa;
+      .select {
+        background: #fab31f;
+      }
+      .card {
+        background: #fab31f;
+        padding: 16px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .title {
+          font-size: 14px;
+          color: black;
+        }
+
+        .value {
+          font-size: 20px;
+          font-weight: bold;
+          color: black;
+        }
+
+        .change {
+          font-size: 13px;
+          font-weight: 500;
+
+          &.up {
+            color: #28a745;
+          }
+
+          &.down {
+            color: #dc3545;
+          }
+
+          &.neutral {
+            color: black;
+          }
+        }
+
+        .product {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+          }
+
+          .info {
+            .name {
+              font-weight: 500;
+            }
+            .quantity {
+              font-size: 14px;
+              color: black;
+            }
+          }
+        }
+
+        .shop {
+          font-weight: 500;
+          font-size: 16px;
+        }
+
+        .name {
+          font-weight: 500;
+          font-size: 14px;
+          color: black;
+        }
+      }
+    }
+  }
+  .chart {
+    padding: 20px;
+    height: 600px;
+    min-width: 1300px;
+    width: 100%;
+    overflow-x: auto;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    .editScroll {
+      &::-webkit-scrollbar {
+        display: none; /* Hoặc width: 0; height: 0; */
+      }
+
+      /* Ẩn thanh cuộn cho Firefox (trên Windows) */
+      scrollbar-width: none; /* "none" để ẩn */
+
+      /* Ẩn thanh cuộn cho Internet Explorer và Edge cũ (ms-overflow-style) */
+      -ms-overflow-style: none; /* "none" để ẩn */
+
+      /* Đảm bảo div này có position: relative hoặc absolute nếu bạn muốn kiểm soát overflow chính xác */
+      position: relative; // Đảm bảo div này là container cho các overflow
+    }
+  }
+}
